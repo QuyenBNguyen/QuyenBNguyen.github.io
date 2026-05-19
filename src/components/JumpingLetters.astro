@@ -1,0 +1,54 @@
+---
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+const letters = text.split('');
+---
+
+<h1 class="animated-title">
+  {letters.map((letter, index) => (
+    <span style={`--delay: ${index * 0.05}s`}>
+      {letter}
+    </span>
+  ))}
+</h1>
+
+<style>
+  .animated-title {
+    cursor: pointer;
+    margin: 0;
+    font-size: 3.052em;
+    display: inline-block;
+    color: #5C0200;
+  }
+
+  .animated-title span {
+    display: inline-block;
+    transition: all 0.3s ease;
+    padding: 0 2px;
+    cursor: pointer;
+    color: inherit;
+  }
+
+  /* Hover animation */
+  .animated-title span:hover {
+    animation: jump 0.6s ease-out;
+  }
+
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+      color: inherit;
+    }
+    50% {
+      transform: translateY(-10px);
+      color: #ff9aa2;
+    }
+    100% {
+      transform: translateY(0);
+      color: inherit;
+    }
+  }
+</style>

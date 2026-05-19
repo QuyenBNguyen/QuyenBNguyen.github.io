@@ -70,10 +70,6 @@ h1,h2,h3, h4, h5, h6 {
 h1 {
 	font-size: 3.052em;
 	margin-bottom: 0.8rem;
-	background: linear-gradient(135deg, #ff9aa2, #ffb7b2);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
 }
 h2 {
 	font-size: 2.441em;
