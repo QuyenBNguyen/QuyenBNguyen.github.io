@@ -1,0 +1,26 @@
+{
+  "projects": [
+    {
+      "title": "IERM - Intelligent Examination Room Management System",
+      "description": "A multi-role examination management and AI-assisted proctoring system for managing exam scheduling, attendance, identity veri cation, ticket handling, and real-time monitoring during university examinations.",
+      "technologies": ["NestJS", "Next.js", "PostgreSQL", "Git", "Docker", 
+      "Flutter", "Firebase", "RESTful API", "WebSocket"],
+      "link": ["https://github.com/IERM-CAPSTONE"],
+      "image": "project1.png"
+    },
+    {
+      "title": "GoHomey - Ride-Hailing Platform",
+      "description": "A full-stack mobile ride-hailing application built with React Native and Node.js, featuring OTP phone authentication, real-time GPS tracking, route visualization with OpenStreetMap-based services, vehicle selection, and trip management. The project integrates mapping APIs, MongoDB database storage, and RESTful backend services to simulate a modern transportation booking experience.",
+      "technologies": ["React Native","Expo","TypeScript","Node.js",
+      "Express.js","MongoDB", "JWT", "Geoapify API", "RESTful API"],
+      "link": ["https://github.com/QuyenBNguyen/GoHomey"],
+      "image": "project2.png"
+    },
+    {
+      "title": "Grand Hotel - Hotel Booking & Management System",
+      "description": "A full-stack hotel booking platform that supports hotel searching, room reservations, online payments, check-in/check-out management, refund processing, face-recognition check-in, and role-based hotel administration for customers, staff, managers, and admins.",
+      "technologies": ["ReactJS", "TypeScript", "Express.js", "MongoDB"],
+      "link": ["https://github.com/CodeForFun2004/GrandeHotel_API", "https://github.com/CodeForFun2004/GrandeHotel_UI"]
+}
+    ]
+    }

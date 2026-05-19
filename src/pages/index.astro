@@ -1,0 +1,30 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import About from '../components/About.astro';
+import Skills from '../components/Skills.astro';
+import Contact from '../components/Contact.astro';
+import Projects from '../components/Projects.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<MainLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+	<h1>Hi, I'm Quyen Nguyen!</h1>
+	<p>Welcome to my portfolio!</p>
+	<About />
+	<Skills />
+	<Projects />
+	<Contact />
+</MainLayout>
+
+<style>
+  h1 {
+	font-size: 2.5em;
+	margin-bottom: 0.5em;
+	text-align: center;
+  }
+
+  p {
+	font-size: 1.25em;
+	margin-bottom: 2em;
+	text-align: center;
+  }

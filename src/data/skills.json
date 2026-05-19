@@ -1,0 +1,16 @@
+{
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": ["ReactJS", "Next.js", "HTML/CSS", "React Native", "Flutter"]
+    },
+    {
+      "category": "Backend",
+      "items": ["Node.js", "NestJS", "MongoDB", "PostgreSQL"]
+    },
+    {
+      "category": "Tools",
+      "items": ["Git", "Docker", "VS Code", "Astro"]
+    }
+  ]
+}

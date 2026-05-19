@@ -1,0 +1,105 @@
+---
+import skillsData from '../data/skills.json';
+---
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    {skillsData.skills.map((skillGroup) => (
+      <div class="skill-category">
+        <h3>{skillGroup.category}</h3>
+        <ul>
+          {skillGroup.items.map((skill) => (
+            <li>{skill}</li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  section {
+    margin: 3rem 0;
+    padding: 3rem 2rem;
+    background: white;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 218, 193, 0.25);
+    box-shadow: 0 8px 32px rgba(255, 154, 162, 15%);
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #ff9aa2;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+
+  h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #ffb7b2, #ff9aa2);
+    border-radius: 3px;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .skill-category {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(181, 234, 215, 0.3);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+  }
+
+  .skill-category:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(255, 154, 162, 15%);
+    border-color: rgba(181, 234, 215, 0.6);
+  }
+
+  .skill-category h3 {
+    font-size: 1.35rem;
+    margin-bottom: 1.2rem;
+    color: var(--accent-dark);
+    font-weight: 700;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    padding: 0.6rem 0;
+    padding-left: 1.8rem;
+    position: relative;
+    color: rgb(var(--gray));
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  li::before {
+    content: '◆';
+    position: absolute;
+    left: 0.2rem;
+    color: var(--quinary);
+    font-size: 0.8em;
+  }
+
+  li:hover {
+    padding-left: 2rem;
+    color: var(--accent-dark);
+  }
+</style>

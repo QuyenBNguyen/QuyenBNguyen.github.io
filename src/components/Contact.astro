@@ -1,0 +1,124 @@
+---
+import { SITE_AUTHOR } from '../consts';
+---
+
+<section id="contact">
+  <h2>Get In Touch</h2>
+  <p class="contact-intro">
+    I'm always interested in hearing about new opportunities and collaborations. Feel free to reach out!
+  </p>
+  
+  <div class="contact-links">
+    <a href="https://github.com/QuyenBNguyen/QuyenBNguyen.github.io/tree/main" target="_blank" class="contact-link">
+      <span class="icon">📱</span>
+      <span>GitHub</span>
+    </a>
+    
+    <a href="mailto:quyennguyenforproject@gmail.com" class="contact-link">
+      <span class="icon">✉️</span>
+      <span>Email</span>
+    </a>
+  </div>
+</section>
+
+<style>
+  section {
+    margin: 3rem 0;
+    padding: 3rem 2rem;
+    background: white;
+    border-radius: 16px;
+    border: 1px solid rgba(181, 234, 215, 0.25);
+    box-shadow: 0 8px 32px rgba(255, 154, 162, 15%);
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  .contact-intro {
+    color: rgb(var(--gray));
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .contact-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    color: var(--accent);
+    section {
+      margin: 3rem 0;
+      padding: 3rem 2rem;
+      background: linear-gradient(135deg, rgba(181, 234, 215, 0.18) 0%, rgba(226, 240, 203, 0.2) 100%);
+      border-radius: 16px;
+      border: 1px solid rgba(181, 234, 215, 0.25);
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: #ff9aa2;
+      position: relative;
+      padding-bottom: 1rem;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #ffb7b2, #ff9aa2);
+      border-radius: 3px;
+    }
+
+    .contact-intro {
+      color: rgb(var(--gray));
+      margin-bottom: 2rem;
+      font-size: 1.05rem;
+      font-weight: 500;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 1rem 1.8rem;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #ff9aa2, #ffb7b2);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      box-shadow: 0 6px 20px rgba(255, 154, 162, 25%);
+    }
+
+    .contact-link:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(255, 154, 162, 40%);
+    }
+
+    .icon {
+      font-size: 1.5rem;
+    }
