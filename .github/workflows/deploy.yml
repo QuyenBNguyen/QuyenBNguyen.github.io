@@ -2,6 +2,7 @@ name: Deploy portfolio to GitHub Pages
 on:
   push:
     branches: [portfolio]
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,7 +25,7 @@ jobs:
         with:
           path: ./dist
 
-deploy:
+  deploy:
     needs: build
     runs-on: ubuntu-latest
     permissions:
@@ -32,7 +33,7 @@ deploy:
       id-token: write
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
