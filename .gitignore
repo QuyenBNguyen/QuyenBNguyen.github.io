@@ -28,7 +28,7 @@ pnpm-debug.log*
 
 # firebase
 .firebase/
-*.lib/firebase-config.ts
+*/lib/firebase-config.ts
 
 # others
-*/notes/
+notes/
