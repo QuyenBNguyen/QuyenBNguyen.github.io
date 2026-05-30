@@ -25,3 +25,10 @@ pnpm-debug.log*
 
 # vscode setting folder
 .vscode/
+
+# firebase
+.firebase/
+*.lib/firebase-config.ts
+
+# others
+*/notes/
